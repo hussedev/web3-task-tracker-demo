@@ -1,15 +1,10 @@
+import { TaskList } from "../../components";
 import { useEthereumTasks } from "./useEthereumTasks";
 
 const EthereumTasks = () => {
   const tasks = useEthereumTasks();
 
-  return (
-    <div>
-      {tasks.map(task => (
-        <div key={task.id}>{task.description}</div>
-      ))}
-    </div>
-  );
+  return <TaskList title="Ethereum Tasks" tasks={tasks} />;
 };
 
 export default EthereumTasks;
