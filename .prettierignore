@@ -1,0 +1,11 @@
+# Dependency directory
+node_modules
+
+# Build output
+dist
+build
+
+# Other
+.eslintrc.cjs
+*.json
+pnpm-lock.yaml
