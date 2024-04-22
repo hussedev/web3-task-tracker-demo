@@ -1,6 +1,6 @@
 import { App } from "./App";
 import { Main } from "./pages";
-import EthereumTasks from "./features/ethereum/EthereumTasks";
+import { EthereumTasks } from "./features/ethereum";
 
 export const routes = [
   {
