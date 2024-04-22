@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-export const ProjectDescription: FC = () => {
+export const Main: FC = () => {
   return (
     <div
       style={{
