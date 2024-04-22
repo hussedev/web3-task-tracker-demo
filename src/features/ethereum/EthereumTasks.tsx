@@ -1,11 +1,11 @@
-import { TaskList } from "../../components";
 import { createTask } from "../../lib/ethereum";
+import { Tasks } from "../../pages";
 import { useEthereumTasks } from "./useEthereumTasks";
 
 const EthereumTasks = () => {
   const tasks = useEthereumTasks();
 
-  return <TaskList title="Ethereum Tasks" tasks={tasks} onCreateTask={createTask} />;
+  return <Tasks title="Ethereum Tasks" tasks={tasks} onCreateTask={createTask} />;
 };
 
 export default EthereumTasks;

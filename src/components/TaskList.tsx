@@ -1,11 +1,8 @@
 import { CSSProperties, FC } from "react";
 import { TaskType } from "../types";
-import { TaskInput } from "./TaskInput";
 
 interface TaskListProps {
-  title?: string;
   tasks: TaskType[];
-  onCreateTask: (description: string) => void;
 }
 
 const listItemStyle: CSSProperties = {
@@ -14,18 +11,14 @@ const listItemStyle: CSSProperties = {
   marginBottom: "8px"
 };
 
-export const TaskList: FC<TaskListProps> = ({ title = "Tasks", tasks, onCreateTask }) => {
+export const TaskList: FC<TaskListProps> = ({ tasks }) => {
   return (
-    <div style={{ padding: "10px" }}>
-      <h2 style={{ marginBottom: "16px" }}>{title}</h2>
-
-      <TaskInput onCreateTask={onCreateTask} />
-
+    <>
       {tasks.map(({ id, description }) => (
         <div key={id} style={listItemStyle}>
           {`${id} - ${description}`}
         </div>
       ))}
-    </div>
+    </>
   );
 };
