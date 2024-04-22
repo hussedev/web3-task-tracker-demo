@@ -1,5 +1,5 @@
 import { App } from "./App";
-import { ProjectDescription } from "./components/ProjectDescription";
+import { Main } from "./pages";
 import EthereumTasks from "./features/ethereum/EthereumTasks";
 
 export const routes = [
@@ -9,7 +9,7 @@ export const routes = [
     children: [
       {
         path: "/",
-        element: <ProjectDescription />
+        element: <Main />
       },
       {
         path: "/ethereum",
