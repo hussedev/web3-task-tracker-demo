@@ -1,18 +1,14 @@
 import { useEffect, useState } from "react";
 import { TaskType } from "../../types";
+import { fetchTasks } from "../../lib/ethereum";
 
 export const useEthereumTasks = () => {
   const [tasks, setTasks] = useState<TaskType[]>([]);
 
   useEffect(() => {
-    const fetchTasks = async () => {
-      const dummyTasks: TaskType[] = [
-        { id: 1, description: "Complete the integration with Ethereum" }
-      ];
-      setTasks(dummyTasks);
-    };
-
-    fetchTasks();
+    fetchTasks().then(taskArray => {
+      if (taskArray) setTasks(taskArray);
+    });
   }, []);
 
   return tasks;
