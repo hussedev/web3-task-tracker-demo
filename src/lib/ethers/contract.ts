@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { contractABI, contractAddress } from "./config";
+import { contractABI, contractAddress } from "../ethereum";
 import { getProvider, getSigner } from "./provider";
 
 export const getContract = async () => {
