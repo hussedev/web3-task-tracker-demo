@@ -1,7 +1,6 @@
 import { FC } from "react";
-import { TaskType } from "../types";
-import { TaskInput } from "../components/TaskInput";
-import { TaskList } from "../components";
+import { TaskType } from "@types";
+import { TaskInput, TaskList } from "@components";
 
 interface TasksProps {
   title?: string;

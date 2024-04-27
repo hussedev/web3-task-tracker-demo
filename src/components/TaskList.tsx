@@ -1,5 +1,5 @@
+import { TaskType } from "@types";
 import { CSSProperties, FC } from "react";
-import { TaskType } from "../types";
 
 interface TaskListProps {
   tasks: TaskType[];

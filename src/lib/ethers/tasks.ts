@@ -1,4 +1,4 @@
-import { TaskType } from "../../types";
+import { TaskType } from "@types";
 import { getContract } from "./contract";
 
 export const createTask = async (description: string) => {

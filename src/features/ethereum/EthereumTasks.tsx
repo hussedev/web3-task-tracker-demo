@@ -1,4 +1,4 @@
-import { Tasks } from "../../pages";
+import { Tasks } from "@pages";
 import { useEthereumTasks } from "./useEthereumTasks";
 
 export const EthereumTasks = () => {
