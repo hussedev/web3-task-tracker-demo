@@ -10,11 +10,11 @@
     "prettier": "prettier --write .",
     "prettier-check": "prettier --check .",
     "preview": "vite preview",
-    "truffle:compile": "npx truffle compile --config ./src/lib/ethereum/truffle/truffle-config.cjs",
-    "truffle:console": "npx truffle console --config ./src/lib/ethereum/truffle/truffle-config.cjs",
-    "truffle:develop": "npx truffle develop --config ./src/lib/ethereum/truffle/truffle-config.cjs",
-    "truffle:migrate": "npx truffle migrate --config ./src/lib/ethereum/truffle/truffle-config.cjs",
-    "truffle:test": "npx truffle test --config ./src/lib/ethereum/truffle/truffle-config.cjs"
+    "truffle:compile": "npx truffle compile --config ./src/lib/truffle/truffle-config.cjs",
+    "truffle:console": "npx truffle console --config ./src/lib/truffle/truffle-config.cjs",
+    "truffle:develop": "npx truffle develop --config ./src/lib/truffle/truffle-config.cjs",
+    "truffle:migrate": "npx truffle migrate --config ./src/lib/truffle/truffle-config.cjs",
+    "truffle:test": "npx truffle test --config ./src/lib/truffle/truffle-config.cjs"
   },
   "dependencies": {
     "ethers": "^6.12.0",
