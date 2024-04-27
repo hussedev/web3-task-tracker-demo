@@ -1,5 +1,5 @@
 export { Footer } from "./Footer";
 export { Header } from "./Header";
+export { InputForm } from "./InputForm";
 export { NavBar } from "./NavBar";
-export { TaskInput } from "./TaskInput";
 export { TaskList } from "./TaskList";

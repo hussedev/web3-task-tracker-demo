@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { TaskType } from "@types";
-import { TaskInput, TaskList } from "@components";
+import { InputForm, TaskList } from "@components";
 
 interface TasksProps {
   title?: string;
@@ -13,7 +13,7 @@ export const Tasks: FC<TasksProps> = ({ title = "Tasks", tasks, onCreateTask }) 
     <div style={{ padding: "10px" }}>
       <h2 style={{ marginBottom: "16px" }}>{title}</h2>
 
-      <TaskInput onCreateTask={onCreateTask} />
+      <InputForm onSubmit={onCreateTask} placeholder="Enter task description" buttonText="Create" />
 
       <TaskList tasks={tasks} />
     </div>
