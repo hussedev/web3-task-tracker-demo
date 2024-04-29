@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createTask, fetchTasks } from "@lib/ethers";
 import { TaskType } from "@types";
 
-export const useEthereumTasks = () => {
+export const useEthersTasks = () => {
   const [tasks, setTask] = useState<TaskType[]>([]);
 
   useEffect(() => {

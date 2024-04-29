@@ -22,7 +22,7 @@ export const Main: FC = () => {
       <p>To begin exploring, select a blockchain:</p>
       <ul>
         <li>
-          <Link to="/ethereum">Ethereum</Link>
+          <Link to="/eth-ethers">Ethers</Link>
         </li>
       </ul>
     </div>
